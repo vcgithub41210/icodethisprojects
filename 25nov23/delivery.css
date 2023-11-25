@@ -1,11 +1,11 @@
 /* Add CSS here */
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Borel&display=swap');
 *{
     margin: 0;
     background: linear-gradient(150deg,rgb(234, 122, 77) 40%,
     rgb(255, 228, 50));
     height: 100%;
-    font-family: 'Borel', cursive;
+    /* font-family: 'Borel', cursive; */
 }
 body{
     display: flex;
@@ -13,19 +13,106 @@ body{
     align-items: center;
 }
 .content{
+    font-family: 'Borel', cursive;
     height: 21.3em;
     width:34.5em;
     background: #fff;
     border-radius: 1vh;
     box-shadow: 0 1vh 3vh -0.5vh rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .navbar{
     width: inherit;
-    height: 2em;
+    height: 1.6em;
     background: rgb(29, 42, 62);
     border-radius: 1vh 1vh 0 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+.body{
+    font-family: 'Albert Sans', sans-serif;
+    flex-grow: 1;
+    /* background-image: url(https://st3.depositphotos.com/22628872/36666/i/450/depositphotos_366665264-stock-photo-madras-beef-basmati-rice-indian.jpg); */
+    background-image: url(https://www.aestheticlife.com.au/cdn/shop/articles/shutterstock_1740542141_1296x.jpg?v=1624871110);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.text{
+    margin-top: 1em;
+    background: transparent;
+    height: 7em;
+    width:15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+    margin-left: 2em;
+    line-height: 4vh;
+}
+h1{
+    color: rgb(0, 0, 0);
+    line-height: -5em;
+    background: transparent;
+    font-size: 0.8em;
+    height: 2em;
+    width: 15em;
+}
+p{
+    background: transparent;
+    font-size: 0.4em;
+    height: 0.5em;
+}
+.searchbar{
+    background: transparent;
+    height: 1.5em;
+    margin-left: 2em;
+    width:12.5em;
+    background: black;
+    border-radius: 0.6vh;
+    display: flex;
+    box-shadow: 0 1vh 3vh -0.5vh rgba(0, 0, 0, .5);
+}
+.input{
+    border:none;
+    height: 100%;
+    min-width:10.875em;
+    padding: 0;
+    border-radius:0.6vh 0 0 0.6vh;
+    outline: none;
+    text-decoration: none;
+    border-bottom: none;
+    background: #fff;
+    font-size: 12.65px;
+}
+::placeholder{
+    transform: translateX(5%);
+    font-size: 1.5vh;
+}
+.search{
+    flex-grow: 1;
+    border: none;
+    border-radius: 0 0.6vh 0.6vh 0;
+    height: inherit;
+    font-size: 1.2vh;
+    background: rgb(247, 82, 31);
+    color: white;
+
+
+}
+.footer{
+    color: rgba(0, 0, 0, .5);
+    width: inherit;
+    height: 1em;
+    border-radius: 0 0 1vh 1vh;
+    background: inherit;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 ul{
@@ -37,6 +124,10 @@ ul{
     margin-right: 0.2em;
 }
 li{
+    background: inherit;
+    display: inline-block;
+}
+.navbar li{
     height: 1em;
     width: 6em;
     font-size: 1.5vh;
@@ -44,10 +135,15 @@ li{
     color: #fff;
     background: inherit;
     margin-right:0.5em;
+    border-right: 1px solid grey;
     /* cursor: pointer; */
 }
-button{
-    text-align: center;
+.navbar ul li:nth-child(4){
+    border-right: none;
+}
+.sign{
+    font-family: 'Borel', cursive;
+    text-align:center;
     position: relative;
     bottom: 0.3em;
     border: none;
@@ -59,21 +155,77 @@ button{
     font-size: 1em;
 }
 .arrow{
-    background: inherit;
-    height: 0.5em;
-    width: 1em;
-    transition: transform 0.3 ease;
+    position: relative;
+    background: none;
+    transition: transform 0.5s ease;
+    display: inline-block;
+    top:25%;
+    transform: translateY(-50%);
 }
 .dropdown:hover .arrow{
     transform: rotate(180deg);
+    /* transform: rotate(180deg); */
 }
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background: rgb(20, 29, 42);
-    max-height: 40px;
-    box-shadow: 0 0.5em 1em -2vh rgba(0,0,0,0.5);
+.footer-document{
+    /* margin-top: 0.5em; */
+    margin-left: 0.5em;
+    background: inherit;
+    background: inherit;
+    height: inherit;
+    width: 9em;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    border: none;
+    display: flex;
+    justify-content: space-between;
 }
-.dropdown:hover .dropdown-content{
-    display: block;
+.footer-document li{
+    background: inherit;
+    font-size:1vh;
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    background: inherit;
+    height: inherit;
+    width: 2.5em;
+    display: flex;
+    justify-content: center;
+    gap:1.5vh;
+    align-items: center;
+}
+.copyright li{
+    background: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vh;
+    height: 0.5em;
+    width:0.5em;
+}
+.circle{
+    background: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials{
+    background:inherit;
+    height: inherit;
+    width:2.5em;
+    /* height: 0.5em; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.socials li{
+    display: flex;
+    align-items: center;
+}
+img{
+    background: inherit;
+    height: 0.6em;
+    width:0.6em;
 }
