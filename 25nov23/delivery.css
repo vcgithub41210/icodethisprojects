@@ -1,0 +1,79 @@
+/* Add CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+*{
+    margin: 0;
+    background: linear-gradient(150deg,rgb(234, 122, 77) 40%,
+    rgb(255, 228, 50));
+    height: 100%;
+    font-family: 'Borel', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 21.3em;
+    width:34.5em;
+    background: #fff;
+    border-radius: 1vh;
+    box-shadow: 0 1vh 3vh -0.5vh rgba(0, 0, 0, .5);
+}
+.navbar{
+    width: inherit;
+    height: 2em;
+    background: rgb(29, 42, 62);
+    border-radius: 1vh 1vh 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul{
+    height: 1.5em;
+    text-align: center;
+    background: inherit;
+    padding: 0;
+    /* line-height: 0em; */
+    margin-right: 0.2em;
+}
+li{
+    height: 1em;
+    width: 6em;
+    font-size: 1.5vh;
+    display: inline-block;
+    color: #fff;
+    background: inherit;
+    margin-right:0.5em;
+    /* cursor: pointer; */
+}
+button{
+    text-align: center;
+    position: relative;
+    bottom: 0.3em;
+    border: none;
+    background: rgb(247, 82, 31);
+    height: 2em;
+    width: 6em;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1em;
+}
+.arrow{
+    background: inherit;
+    height: 0.5em;
+    width: 1em;
+    transition: transform 0.3 ease;
+}
+.dropdown:hover .arrow{
+    transform: rotate(180deg);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: rgb(20, 29, 42);
+    max-height: 40px;
+    box-shadow: 0 0.5em 1em -2vh rgba(0,0,0,0.5);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
