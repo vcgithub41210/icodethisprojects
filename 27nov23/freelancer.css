@@ -1,0 +1,137 @@
+/* Add CSS here */
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Borel&family=Mooli&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    height: 100%;;
+    background: #f7feff;
+    font-family: 'Mooli', sans-serif;
+    color: rgb(25, 26, 113);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.freelancer-card{
+    height: 18em;
+    width: 18em;
+    background: #fff;
+    box-shadow: 0 0em 2em -0.25em rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap:2vh;
+}
+.profile{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    margin-left: 1em;
+    gap:0.2em;
+}
+.profile img{
+    height: 4em;
+    width:4em;
+    border-radius: 50%;
+}
+.profile div{
+    font-size: 0.5em;
+    height: 1em;
+}
+.profile p{
+    height: 0.4rem;
+    width: 0.8rem;
+    border-radius: 1.8px;
+    background: rgb(7, 167, 7);
+    font-size: 1.2vh;
+    text-align: center;
+    color: #fff;
+}
+.content{
+    background: transparent;
+    /* background: black; */
+    /* flex-grow: 1; */
+    width: 11em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.content h5{
+    margin-top:3em;
+    background: transparent;
+    height: auto;
+}
+.content p{
+    height: auto;
+    font-size: 2vh;
+}
+.content .link{
+    color: rgba(0, 0, 0, 0.25);
+}
+.content .posts{
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    display: flex;
+    height: auto;
+    /* width: 11em; */
+    border-bottom: 0.3px solid rgba(166, 162, 162, 0.345);
+}
+.content .posts div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:0.4em;
+    background: transparent;
+    flex-grow: 1;
+}
+img{
+    height: 0.8em;
+    width: 0.8em;
+}
+.content .activity{
+    background: transparent;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    gap:1em;
+    border-bottom: 0.5px solid rgb(84, 82, 82);
+}
+.content .activity .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .activity h4{
+    height: auto;
+}
+
+.content .options{
+    background: transparent;
+    height: 1em;
+}
+.content .options .hire{
+    background: rgb(243, 136, 22);
+    border: none;
+    height: auto;
+    width: auto;
+    padding: 0.8em;
+    font-size: 0.55em;
+    color: #fff;
+    border-radius: 2px;
+}
+.content .options .addfav{
+    background: transparent;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.55em;
+}
+.content .intro{
+    font-size: 8px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
