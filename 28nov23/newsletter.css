@@ -1,0 +1,124 @@
+/* Add CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+*{
+    margin: 0;
+    background: rgb(239, 236, 247);
+    height: 100%;
+    font-family: 'Noto Sans Mono', monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.5rem;
+    /* margin-left: 12rem; */
+    margin-left: 30%;
+}
+.cookie-popup{
+    display: flex;
+    height: 6rem;
+    width: 11.6rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.7rem 1rem -0.5rem rgba(0, 0, 0,0.5);
+    background: rgb(251, 230, 123);
+}
+.cookie-popup img{
+    margin-top: 2vh;
+    height: 4rem;
+    width: 4rem;
+}
+.cookie-popup .cookie-content{
+    height: inherit;
+    background: transparent;
+    width: 6.5rem;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.25rem;
+}
+.cookie-popup .cookie-content .choices{
+    height:auto;
+    background: transparent;
+    display: flex;
+    gap:2vh;
+}
+.cookie-content p{
+    padding-bottom: 0.4rem;
+}
+p{
+    background: transparent;
+    height: auto;
+    font-size: 6px;
+}
+span{
+    color: rgb(3, 95, 187);
+    background: transparent;
+}
+.cookie-popup .cookie-content button{
+    height: 1rem;
+    width: 3rem;
+    font-size: 5.6px;
+    text-align: center;
+    border: none;
+    border-radius: 1.5px;
+    background: rgb(106, 57, 28);
+    color: #fff;
+}
+.join-content{
+    height: 8rem;
+    width:18rem;
+    background: #fff;
+    /* background: black; */
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.7rem 1rem -0.5rem rgba(0, 0, 0, 0.5);
+}
+.join-content img{
+    margin-top: 1rem;
+    height: 4.6rem;
+    width: 6rem;
+}
+.join-content .join-message{
+    background: transparent;
+    width:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1vh
+}
+.join-content .join-message h5{
+    background: transparent;
+    font-size: 1.5vh;
+    height: auto;
+}
+.join-message .join-newsletter{
+    background: transparent;
+    display: flex;
+    height: auto;
+    gap:1vh;
+}
+.join-newsletter button{
+    height: 1rem;
+    width: 3rem;
+    border: none;
+    font-size: 5.6px;
+    border-radius: 1.5px;
+    background: rgb(106, 57, 28);
+    color: #fff;
+}
+.join-newsletter input{
+    border:0.1vh solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    height: 0.8rem;
+    width: 5rem;
+    font-size: 5.6px;
+    background: #fff;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+.join-message .notify{
+    font-size: 4.8px;
+    padding-left: 1vh;
+}
