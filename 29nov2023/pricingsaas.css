@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    background: transparent;
+    height:auto;
+    font-family: 'Work Sans', sans-serif;
+    color:white;
+}
+
+body{
+    background: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    height: 26rem;
+    width: 29rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.plan{
+    font-size: 1.2vh;
+    height: 3rem;
+    width: 11rem;
+    border-radius: 0 0 2vh 2vh;
+    background: rgb(186, 12, 56);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1vh;
+}
+.plan h6{
+    font-size: 1.5vh;
+}
+.select-plan{
+    margin-top: 3.4rem;
+    font-size: 1.5vh;
+    height: auto;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.select-plan h4{
+    font-size: 3vh;
+}
+.select-plan .button{
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    height: auto;
+    gap:0.2rem;
+}
+.select-plan .toggle{
+    height: 0.7rem;
+    width: 1.2rem;
+    background: rgb(186, 12, 56);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.select-plan .toggle .pointer{
+    height: 0.5rem;
+    aspect-ratio: 1;
+    margin-right: 0.25vh;
+    background: #fff;
+    border-radius: 50%;
+}
+.plan-list{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    height:16.4rem;
+    width:inherit;
+}
+.plan-list div{
+    /* color: #fff; */
+    width: 9.5rem;
+    height: inherit;
+    background: rgb(37, 37, 37);
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.3rem;
+}
+
+.plan-list div span{
+    font-size: 1.5em;
+    width: inherit;
+    font-weight: bold;
+    /* background: black; */
+}
+.plan-list div ul{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.38rem;
+    list-style: none;
+}
+.plan-list div li::before{
+    content:"\2022";
+    color: rgb(186, 12, 56);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-bottom: 10px;
+    /* display: inline-block; */
+}
+.plan-list div button{
+    font-size: 1.5vh;
+    padding: 0.4rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 1px solid rgb(186, 12, 56);;
+    border-radius: 0.7vh;
+    color: #fff;
+}
+.plan-list .plan-2 button{
+    background: rgb(186, 12, 56);
+}
+.plan-list .plan-2 ul{
+    margin-top: 4.5rem;
+}
+.plan-list .plan-2 p{
+    margin-top: 0.5rem;
+}
+.plan-list .plan-1 h2{
+    margin-top: 0.5rem;
+}
+.plan-list .plan-1 ul{
+    margin-top: 2.5rem;
+}
+.plan-list .plan-3 ul{
+    margin-top:3.5rem;
+}
+.plan-list .plan-3 h4{
+    margin-top: 1rem;
+}
